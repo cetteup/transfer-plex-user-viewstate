@@ -39,21 +39,21 @@ print(tabulate([{"index": i, "name": accounts[i]["name"]} for i in range(0, len(
 
 # Ask user to select source user
 sourceAccountIndex = int(get_valid_input(
-    "Please enter the _source_ account index",
+    "First, please enter the _source_ account index",
     str_range(len(accounts)),
     "No account with that ID, please enter a valid account index"
 ))
 
 # Ask user to select target user
 targetUserIndex = int(get_valid_input(
-    "Please enter the _target_ account index",
+    "Now, please enter the _target_ account index",
     str_range(len(accounts)),
     "No account with that ID, please enter a valid account index"
 ))
 
 # Ask user to select copying/moving view state
 mode = get_valid_input(
-    "Do want to copy or move the viewstate? (copy/move)",
+    "Do you want to copy or move the viewstate? (copy/move)",
     ["c", "copy", "m", "move"],
     "Please select either (c)opy or (m)ove"
 )
