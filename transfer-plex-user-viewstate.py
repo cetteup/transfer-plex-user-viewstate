@@ -33,7 +33,6 @@ cursor = connection.cursor()
 # Get users
 cursor.execute("SELECT id, name, created_at FROM accounts WHERE id > 0")
 accounts = cursor.fetchall()
-accountIds = [str(a["id"]) for a in accounts]
 
 # Print users
 print(tabulate([{"index": i, "name": accounts[i]["name"]} for i in range(0, len(accounts))], headers="keys"))
