@@ -1,0 +1,2 @@
+altgraph==0.17
+tabulate==0.8.7
