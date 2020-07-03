@@ -42,5 +42,4 @@ If you have Python >=3.6 installed on your system, you can use the Python script
 
 ## Known limitations
 - users/accounts only appear in database after connecting to the server and/or playing a media item from it at least once
-- script currently does not check whether target user already has viewstate information for a library item (may result in two conflicting viewstates)
 - Tautulli ([A Python based monitoring and tracking tool for Plex Media Server](https://tautulli.com)) will not pick up any of the transferred viewstate information
